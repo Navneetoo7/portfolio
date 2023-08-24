@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/portfolio_navneet/static/css/main.bf538fe7.css",
+    "main.js": "/portfolio_navneet/static/js/main.07b5d098.js",
+    "static/media/HeroImage.jpg": "/portfolio_navneet/static/media/HeroImage.46d97faa38266dd3a1a6.jpg",
+    "index.html": "/portfolio_navneet/index.html",
+    "main.bf538fe7.css.map": "/portfolio_navneet/static/css/main.bf538fe7.css.map",
+    "main.07b5d098.js.map": "/portfolio_navneet/static/js/main.07b5d098.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bf538fe7.css",
+    "static/js/main.07b5d098.js"
+  ]
+}
