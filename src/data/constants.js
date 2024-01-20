@@ -7,7 +7,7 @@ export const Bio = {
     "Programmer",
   ],
   description:
-    "I am a dedicated and skilled Full Stack Developer with experience in various technologies such as JavaScript and TypeScript. I have expertise in frameworks like React Native, React.js, Angular, and Node.js, along with proficiency in working with databases such as MySQL, MongoDB, and PostgreSQL. I am passionate about collaborating with teams, solving problems, and continuously growing in my skills. With a strong educational background in Computer Engineering and a track record of delivering successful projects, I am confident in my ability to contribute to impactful and innovative web development initiatives.",
+    "I am a dedicated and skilled Full Stack Developer with experience in various technologies such as JavaScript and TypeScript. I have expertise in frameworks like React Native, Angular, Node.js, and   React.js, along with proficiency in working with databases such as MySQL, MongoDB, and PostgreSQL. I am passionate about collaborating with teams, solving problems, and continuously growing in my skills. With a strong educational background in Computer Engineering and a track record of delivering successful projects, I am confident in my ability to contribute to impactful and innovative web development initiatives.",
   github: "https://github.com/Navneetoo7",
   resume:
     "https://drive.google.com/file/d/1fDEtO6NEIqla9yGfbNqI1l5pgmaAM3ai/view?usp=sharing",
@@ -148,7 +148,7 @@ export const skills = [
       {
         name: "Git",
         image:
-          "https://camo.githubusercontent.com/fbfcb9e3dc648adc93bef37c718db16c52f617ad055a26de6dc3c21865c3321d/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f6769742d73636d2f6769742d73636d2d69636f6e2e737667",
+          "https://cdn.iconscout.com/icon/premium/png-512-thumb/git-2752184-2285001.png?f=webp&w=512",
       },
       {
         name: "GitHub",
@@ -163,7 +163,7 @@ export const skills = [
       {
         name: "Postman",
         image:
-          "https://camo.githubusercontent.com/93b32389bf746009ca2370de7fe06c3b5146f4c99d99df65994f9ced0ba41685/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f676574706f73746d616e2f676574706f73746d616e2d69636f6e2e737667",
+          "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/postman-icon.png",
       },
    
     ],
@@ -187,41 +187,62 @@ export const experiences = [
       "Node Js",
     ],
   },
-
   {
     id: 1,
-    role:"Software Engineer",
-    company: "websoc.ai (Websoc Studio Pvt. Ltd.)",
-    date: "Sept 2021 - Feb 2022",
-    desc: "Worked on two projects Caelum is an E-commerce app, and Spola this one is a great app that has combined feature applications like Instagram and Clubhouse. Reviewed code, debugged problems, and corrected issues in existing applications.",
+    img: "https://media.licdn.com/dms/image/D4D0BAQFXhegVEEbxEg/company-logo_200_200/0/1687383931249/seirioslabs_logo?e=1714003200&v=beta&t=XAQRCabBFemPtBZhVywk5COaOYAzcv72HniY-cVakVM",
+    role:"Full Stack Developer",
+    company: "SEIRIOS LABS",
+    date: "Nov 2020 - Feb 2022",
+    desc: `Contributed significantly to the development of Caelum an E-commerce app, and Spola is a great app with combined feature applications like Instagram and Clubhouse. Successfully crafted a Caregiving Service app for Android and iOS platforms and a Service provider app only for Android using React Native. Worked on the backend parts of the Caregiving Service app using node.js.`,
     skills: [
+      "React-Native",
+      "TypeScript",
+      "NodeJs",
       "ReactJS",
       "Redux",
-      "NodeJs",
       "HTML",
       "CSS",
-      "TypeScript",
       "JavaScript",
       "Next.js",
       "MongoDB",
       "Context API"
     ],
   },
-  {
-    id: 2,
-    role: "Full Stack Developer",
-    company: "MAXELIT",
-    date: "Mar 2021 - Setp 2021",
-    desc: "Build application is a Caregiving Service request app for Android and iOS using React native expo. Reviewed code, debugged problems, and corrected issues in existing applications with React and Django.",
-    skills: [
-    "React-Native",
-      "HTML",
-      "CSS",
-      "JavaScript",
-      "Python",
-      "Django"
-    ],
-  },
+
+  // {
+  //   id: 1,
+  //   role:"Software Engineer",
+  //   company: "websoc.ai (Websoc Studio Pvt. Ltd.)",
+  //   date: "Sept 2021 - Feb 2022",
+  //   desc: "Worked on two projects Caelum is an E-commerce app, and Spola this one is a great app that has combined feature applications like Instagram and Clubhouse. Reviewed code, debugged problems, and corrected issues in existing applications.",
+  //   skills: [
+  //     "ReactJS",
+  //     "Redux",
+  //     "NodeJs",
+  //     "HTML",
+  //     "CSS",
+  //     "TypeScript",
+  //     "JavaScript",
+  //     "Next.js",
+  //     "MongoDB",
+  //     "Context API"
+  //   ],
+  // },
+  // {
+  //   id: 2,
+  //   role: "Full Stack Developer",
+  //   company: "MAXELIT",
+  //   date: "Mar 2021 - Setp 2021",
+  //   desc: "Build application is a Caregiving Service request app for Android and iOS using React native expo. Reviewed code, debugged problems, and corrected issues in existing applications with React and Django.",
+  //   skills: [
+  //   "React-Native",
+  //     "HTML",
+  //     "CSS",
+  //     "JavaScript",
+  //     "Python",
+  //     "Django"
+  //   ],
+  // },
   
 ];
 
