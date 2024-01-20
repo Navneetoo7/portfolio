@@ -10,7 +10,7 @@ export const Bio = {
     "I am a dedicated and skilled Full Stack Developer with experience in various technologies such as JavaScript and TypeScript. I have expertise in frameworks like React Native, Angular, Node.js, and   React.js, along with proficiency in working with databases such as MySQL, MongoDB, and PostgreSQL. I am passionate about collaborating with teams, solving problems, and continuously growing in my skills. With a strong educational background in Computer Engineering and a track record of delivering successful projects, I am confident in my ability to contribute to impactful and innovative web development initiatives.",
   github: "https://github.com/Navneetoo7",
   resume:
-    "https://drive.google.com/file/d/1fDEtO6NEIqla9yGfbNqI1l5pgmaAM3ai/view?usp=sharing",
+    "https://drive.google.com/file/d/1tQQ1HdtJCAUtKj0Q_wW05Enmfgahlugt/view?usp=sharing",
   linkedin: "https://www.linkedin.com/in/navneetoo7/",
   insta: "https://instagram.com/nef__oo7?utm_source=qr&igshid=NGExMmI2YTkyZg%3D%3D"
 };
