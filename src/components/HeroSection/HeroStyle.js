@@ -14,7 +14,6 @@ export const HeroContainer = styled.div`
     padding: 32px 16px;
   }
   z-index: 1;
-
 `;
 
 export const HeroBg = styled.div`
@@ -166,37 +165,46 @@ export const SubTitle = styled.div`
 `;
 
 export const ResumeButton = styled.a`
-    -webkit-appearance: button;
-    -moz-appearance: button;
-    appearance: button;
-    text-decoration: none;
-    width: 95%;
-    max-width: 300px;
-    text-align: center;
-    padding: 16px 0;
-    color:${({ theme }) => theme.white};
-    border-radius: 20px;
-    cursor: pointer;
-    font-size: 20px;
-    font-weight: 600;
-    transition: all 0.2s ease-in-out !important;
-    background: hsla(271, 100%, 50%, 1);
-    background: linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
-    background: -moz-linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
-    background: -webkit-linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
-    box-shadow:  20px 20px 60px #1F2634,
-    -20px -20px 60px #1F2634;
-    &:hover {
-        transform: scale(1.05);
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+  text-decoration: none;
+  width: 95%;
+  max-width: 300px;
+  text-align: center;
+  padding: 16px 0;
+  color: ${({ theme }) => theme.white};
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 600;
+  transition: all 0.2s ease-in-out !important;
+  background: hsla(271, 100%, 50%, 1);
+  background: linear-gradient(
+    225deg,
+    hsla(271, 100%, 50%, 1) 0%,
+    hsla(294, 100%, 50%, 1) 100%
+  );
+  background: -moz-linear-gradient(
+    225deg,
+    hsla(271, 100%, 50%, 1) 0%,
+    hsla(294, 100%, 50%, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    225deg,
+    hsla(271, 100%, 50%, 1) 0%,
+    hsla(294, 100%, 50%, 1) 100%
+  );
+  // box-shadow: 10px 15px 30px #36454F, -20px -20px 60px #1f2634;
+  &:hover {
+    transform: scale(1.05);
     transition: all 0.4s ease-in-out;
-    box-shadow:  20px 20px 60px #1F2634,
+    // box-shadow:  15px 15px 30px #36454F,
     filter: brightness(1);
-    }    
-    
-    
-    @media (max-width: 640px) {
-        padding: 12px 0;
-        font-size: 18px;
-    } 
+  }
 
+  @media (max-width: 640px) {
+    padding: 10px 0;
+    font-size: 18px;
+  }
 `;
