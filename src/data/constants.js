@@ -360,6 +360,11 @@ export const skills = [
         image: "https://www.vectorlogo.zone/logos/graphql/graphql-icon.svg",
       },
       { name: "Socket.IO", image: "https://socket.io/images/logo.svg" },
+      {
+        name: "RabbitMQ",
+        image:
+          "https://dyltqmyl993wv.cloudfront.net/assets/stacks/rmq-messaging-topology-operator/img/rmq-messaging-topology-operator-stack-220x234.png",
+      },
     ],
   },
   {
