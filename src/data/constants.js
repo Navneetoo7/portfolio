@@ -451,7 +451,7 @@ export const experiences = [
     company: "Tapup",
     date: "November 2020 - February 2022",
     desc: "Developed an E-commerce platform and a social media application with features similar to Instagram and Clubhouse. Created cross-platform caregiving service applications using React Native and Node.js.",
-    skills: ["React Native", "Next.js", "Redux", "Context API"],
+    skills: ["React Native", "Next.js", "Redux", "Context API", "Node.js"],
   },
 ];
 
