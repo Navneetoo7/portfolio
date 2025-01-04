@@ -444,6 +444,7 @@ export const experiences = [
     desc: "Developed ATM operation management applications serving 60,000+ daily users. Built mobile and web applications using TypeScript, React Native, Angular, and Redux.",
     skills: ["TypeScript", "React Native", "Angular", "Redux"],
   },
+
   {
     id: 3,
     // img: "https://media.licdn.com/dms/image/C560BAQHOBmJs5EihDA/company-logo_200_200/...",
