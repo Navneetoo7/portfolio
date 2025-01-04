@@ -424,7 +424,7 @@ export const experiences = [
     company: "Voizzit",
     date: "February 2024 - Present",
     desc: "Developed an OTT platform app content management system, collaborating with an 18-member international team. Architected and implemented backend services using Nest.js, PostgreSQL, and Bull Queue for efficient content delivery. Integrated payment gateway solutions and implemented real-time features using Socket.io.",
-    skills: ["Nest.js", "PostgreSQL", "Socket.IO", "Bull Queue"],
+    skills: ["Nest.js", "PostgreSQL", "Socket.IO", "Bull Queue", "Docker"],
   },
   {
     id: 1,
