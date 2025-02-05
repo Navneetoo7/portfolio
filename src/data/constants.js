@@ -276,12 +276,17 @@
 
 export const Bio = {
   name: "Navneet Chaurasiya",
-  roles: ["Programmer", "Full Stack Developer", "Mobile App Developer"],
+  roles: [
+    "Full Stack Developer",
+    "Specializing in Backend Development",
+    "Mobile App Developer",
+    "Programmer",
+  ],
   description:
-    "Accomplished Middle full Stack Developer with 5+ years of experience designing and implementing robust web and mobile applications across OTT, Oil Gas, Banking, and E-commerce domains. Proficient in cross-platform development using React Native and Angular, with expertise in TypeScript, Node.js, and Nest.js. Skilled in developing scalable microservices, integrating complex architectures, and delivering innovative solutions that drive operational efficiency",
+    "Accomplished Full Stack Developer with 5+ years of experience designing and implementing robust web and mobile applications across OTT, Oil Gas, Banking, and E-commerce domains. Proficient in cross-platform development using React Native and Angular, with expertise in TypeScript, Node.js, and Nest.js. Skilled in developing scalable microservices, integrating complex architectures, and delivering innovative solutions that drive operational efficiency",
   github: "https://github.com/Navneetoo7",
   resume:
-    "https://drive.google.com/file/d/1YtcGD6uQyMPkT9UUWuJrmQY65VVC-PON/view?usp=drive_link",
+    "https://drive.google.com/file/d/1jMncCjrdyMvWtihl91zEL18m3Fn6rJvv/view?usp=sharing",
   linkedin: "https://www.linkedin.com/in/navneetoo7/",
   insta:
     "https://instagram.com/nef__oo7?utm_source=qr&igshid=NGExMmI2YTkyZg%3D%3D",
