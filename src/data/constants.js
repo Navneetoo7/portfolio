@@ -278,7 +278,7 @@ export const Bio = {
   name: "Navneet Chaurasiya",
   roles: [
     "Full Stack Developer",
-    "Specializing in Backend Development",
+    "Specializing in Backend",
     "Mobile App Developer",
     "Programmer",
   ],
