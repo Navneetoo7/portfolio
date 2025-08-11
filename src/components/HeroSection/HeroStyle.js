@@ -47,7 +47,6 @@ export const HeroInnerContainer = styled.div`
   align-items: center;
   width: 100%;
   max-width: 1100px;
-
   @media (max-width: 960px) {
     flex-direction: column;
   }
@@ -195,7 +194,7 @@ export const ResumeButton = styled.a`
     hsla(271, 100%, 50%, 1) 0%,
     hsla(294, 100%, 50%, 1) 100%
   );
-  // box-shadow: 10px 15px 30px #36454F, -20px -20px 60px #1f2634;
+  box-shadow: 2px 5px 10px #36454f, -2px -2px 6px #1f2634;
   &:hover {
     transform: scale(1.05);
     transition: all 0.4s ease-in-out;
