@@ -10,7 +10,7 @@ export const Bio = {
     "Accomplished Full Stack Developer with 5+ years of experience designing and implementing robust web and mobile applications across OTT, Oil Gas, Banking, and E-commerce domains. Proficient in cross-platform development using React Native and Angular, with expertise in TypeScript, Node.js, and Nest.js. Skilled in developing scalable microservices, integrating complex architectures, and delivering innovative solutions that drive operational efficiency",
   github: "https://github.com/Navneetoo7",
   resume:
-    "https://drive.google.com/file/d/1_kc3NWgV0hIBbDxOc0xday4zM3JHJcnr/view?usp=sharing",
+    "https://drive.google.com/file/d/1Fngz5XwmnsGBBWZMEnClu6OQePJaAbpk/view?usp=drivesdk",
   linkedin: "https://www.linkedin.com/in/navneetoo7/",
   insta:
     "https://instagram.com/nef__oo7?utm_source=qr&igshid=NGExMmI2YTkyZg%3D%3D",
