@@ -146,18 +146,27 @@ export const skills = [
 ];
 
 export const experiences = [
-  {
+   {
     id: 0,
-    img: "https://media.licdn.com/dms/image/v2/D4D0BAQGZW5wJindNgw/company-logo_200_200/company-logo_200_200/0/1696677600640/voizzitofficial_logo?e=1741219200&v=beta&t=A61msFVJo1sXYh3tIy89CUi5dBtLZmOn9FbdBqtdEeg",
+    img: "https://media.licdn.com/dms/image/v2/C560BAQEAGDJH5GNZMg/company-logo_200_200/company-logo_200_200/0/1631325219065?e=1762992000&v=beta&t=lSVMQ1aooM9ad-ea_hmOA4-6XAGkqyXxsVuAn792C5U",
     role: "Full Stack Developer",
-    company: "Voizzit",
-    date: "February 2024 - Present",
+    company: "Aban Investment LLC",
+    date: "June 2025 - Present",
+    desc: "Developed 4 major enterprise-level applications enhancing automation, reporting, and system communication across departments. Built a FastAPI-based dashboard system with an authentication module to manage product pricing, purchases, and analytics—improving data accessibility and operational visibility. Created a smart barcode generation solution for Oracle ERP using Express.js, enabling invoice-based barcode generation. Once scanned, users could securely download bills directly to their devices—streamlining invoice validation and tracking. Engineered an automated mail service system using Node.js, Redis, Bull Queue, and Azure Blob Storage, which retrieves billing and user data nightly, uploads documents (up to 100MB each) to cloud storage, and sends consolidated email summaries to users every morning at 8 AM. Implemented retry and error-handling logic to ensure 99.9% delivery success rate. Led the development of an internal enterprise management hub integrating multiple applications—Adrenaline, Smart Recruiter, Adhoc Requests, Visa Management, and Asset Issuance—into a unified platform. Designed a microservices-based architecture using Nest.js and gRPC for inter-service communication. Implemented Kong API Gateway for secure routing, service discovery, and rate limiting. Developed core services including Auth Service, Manager Core, and SR Service, with a Next.js frontend for a seamless user experience. Delivered a scalable and maintainable system architecture that significantly reduced cross-departmental workflow time and improved approval tracking efficiency.",
+    skills: ["Nest.js", "PostgreSQL", "Socket.IO", "Bull Queue", "Docker", "MySQL", "gRPC", "Kong", "Redies", "Microservices"],
+  },
+  {
+    id: 1,
+    img: "https://media.licdn.com/dms/image/v2/D4D0BAQGZW5wJindNgw/company-logo_200_200/company-logo_200_200/0/1696677600640/voizzitofficial_logo?e=1762992000&v=beta&t=IlHEH7bXyQemB9QTsvwWaa9XUmjC9eH-ys9tGeIasEE",
+    role: "Full Stack Developer",
+    company: "Voizzit Information Technology LLC",
+    date: "February 2024 - June 2025",
     desc: "Developed an OTT platform app content management system, collaborating with an 18-member international team. Architected and implemented backend services using Nest.js, PostgreSQL, and Bull Queue for efficient content delivery. Integrated payment gateway solutions and implemented real-time features using Socket.io.",
     skills: ["Nest.js", "PostgreSQL", "Socket.IO", "Bull Queue", "Docker"],
   },
   {
-    id: 1,
-    img: "https://media.licdn.com/dms/image/v2/C510BAQE5jbbFEAeWFA/company-logo_200_200/company-logo_200_200/0/1631369215758?e=1741219200&v=beta&t=Tql8I-3lg58bYaiCv-kJp2XllcJ2S36qpAgZvqP6e2E",
+    id: 2,
+    img: "https://media.licdn.com/dms/image/v2/C510BAQE5jbbFEAeWFA/company-logo_200_200/company-logo_200_200/0/1631369215758?e=1762992000&v=beta&t=gwYLlztB7mz9-7tHd2jLh5RYzZYCTj9iwno54tn7fAs",
     role: "Full Stack Developer",
     company: "MindSquare | Reliance Industries Limited",
     date: "September 2023 - February 2024",
@@ -165,8 +174,8 @@ export const experiences = [
     skills: ["TypeScript", "Angular", "Node.js", "MySQL"],
   },
   {
-    id: 2,
-    img: "https://media.licdn.com/dms/image/v2/C560BAQHOBmJs5EihDA/company-logo_200_200/company-logo_200_200/0/1630644305985/oneture_logo?e=1741219200&v=beta&t=Djg-YAzFY-875gDwBabhXWsU7hUjB1y7m6Yhu6ns4Io",
+    id: 3,
+    img: "https://media.licdn.com/dms/image/v2/C560BAQHOBmJs5EihDA/company-logo_200_200/company-logo_200_200/0/1630644305985/oneture_logo?e=1762992000&v=beta&t=xNr5cMYtz45BFLYEMxB0C55UIdFw2cx2Re-Qja2cThA",
     role: "Software Engineer",
     company: "Oneture Technologies",
     date: "February 2022 - March 2023",
@@ -174,7 +183,7 @@ export const experiences = [
     skills: ["TypeScript", "React Native", "Angular", "Redux"],
   },
   {
-    id: 3,
+    id: 4,
     // img: "https://media.licdn.com/dms/image/C560BAQHOBmJs5EihDA/company-logo_200_200/...",
     role: "Full Stack Developer",
     company: "Tapup",
