@@ -153,7 +153,7 @@ export const experiences = [
     company: "Aban Investment LLC",
     date: "June 2025 - Present",
     desc: "Developed 4 major enterprise-level applications enhancing automation, reporting, and system communication across departments. Built a FastAPI-based dashboard system with an authentication module to manage product pricing, purchases, and analytics—improving data accessibility and operational visibility. Created a smart barcode generation solution for Oracle ERP using Express.js, enabling invoice-based barcode generation. Once scanned, users could securely download bills directly to their devices—streamlining invoice validation and tracking. Engineered an automated mail service system using Node.js, Redis, Bull Queue, and Azure Blob Storage, which retrieves billing and user data nightly, uploads documents (up to 100MB each) to cloud storage, and sends consolidated email summaries to users every morning at 8 AM. Implemented retry and error-handling logic to ensure 99.9% delivery success rate. Led the development of an internal enterprise management hub integrating multiple applications—Adrenaline, Smart Recruiter, Adhoc Requests, Visa Management, and Asset Issuance—into a unified platform. Designed a microservices-based architecture using Nest.js and gRPC for inter-service communication. Implemented Kong API Gateway for secure routing, service discovery, and rate limiting. Developed core services including Auth Service, Manager Core, and SR Service, with a Next.js frontend for a seamless user experience. Delivered a scalable and maintainable system architecture that significantly reduced cross-departmental workflow time and improved approval tracking efficiency.",
-    skills: ["Nest.js", "PostgreSQL", "Socket.IO", "Bull Queue", "Docker", "MySQL", "gRPC", "Kong", "Redies", "Microservices"],
+    skills: ["Nest.js", "PostgreSQL", "Socket.IO", "Bull Queue", "Docker", "MySQL", "gRPC", "Kong", "Redies", "Microservices", "FastAPI"],
   },
   {
     id: 1,
@@ -189,7 +189,7 @@ export const experiences = [
     company: "Tapup",
     date: "November 2020 - February 2022",
     desc: "Developed an E-commerce platform and a social media application with features similar to Instagram and Clubhouse. Created cross-platform caregiving service applications using React Native and Node.js.",
-    skills: ["React Native", "Next.js", "Redux", "Context API", "Node.js"],
+    skills: ["React Native", "Next.js", "Redux", "Context API", "Node.js", "Django"],
   },
 ];
 
