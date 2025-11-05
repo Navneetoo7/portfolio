@@ -10,19 +10,21 @@ import {
   Span,
   SubTitle,
   ResumeButton,
+  HeroBg,
 } from "./HeroStyle";
 // import HeroImg from "../../images/HeroImage.jpg";
-import ChangedOne from "../../images/image.jpg";
+import ChangedOne from "../../images/profile_image.png";
 import Typewriter from "typewriter-effect";
 import { Bio } from "../../data/constants";
+import HeroBgAnimation from "../HeroBgAnimation";
 
 const HeroSection = () => {
   return (
     <div id="about">
       <HeroContainer>
-        {/* <HeroBg>
-                    <HeroBgAnimation />
-                </HeroBg> */}
+        <HeroBg>
+          <HeroBgAnimation />
+        </HeroBg>
         <HeroInnerContainer>
           <HeroLeftContainer id="Left">
             <Title>

@@ -2,15 +2,16 @@ export const Bio = {
   name: "Navneet Chaurasiya",
   roles: [
     "Full Stack Developer",
-    "Specializing in Backend",
+    "Backend Specialist",
     "Mobile App Developer",
     "Programmer",
   ],
-  description:
-    "Accomplished Full Stack Developer with 5+ years of experience designing and implementing robust web and mobile applications across OTT, Oil Gas, Banking, and E-commerce domains. Proficient in cross-platform development using React Native and Angular, with expertise in TypeScript, Node.js, and Nest.js. Skilled in developing scalable microservices, integrating complex architectures, and delivering innovative solutions that drive operational efficiency",
+  description: `I'm a Full Stack Developer with 5+ years of experience, specializing in backend engineering. I build scalable and secure systems using Node.js, NestJS, and FastAPI with expertise in Redis, RabbitMQ, Kafka, and PostgreSQL.
+
+I focus on designing clean, high-performance architectures and microservices that power automation, FinTech, and AI-driven platforms. Alongside backend development, I deliver end-to-end solutions with React.js, Next.js, and React Native, backed by strong DevOps and API integration skills.`,
   github: "https://github.com/Navneetoo7",
   resume:
-    "https://drive.google.com/file/d/1uV7eyHffYnILnmdIU_yFe_NU5MR0O-Zl/view?usp=drive_link",
+    "https://drive.google.com/file/d/1TGxHGYDQxjC_QcmGHdUAxNXGhvG5UFza/view?usp=drive_link",
   linkedin: "https://www.linkedin.com/in/navneetoo7/",
   insta:
     "https://instagram.com/nef__oo7?utm_source=qr&igshid=NGExMmI2YTkyZg%3D%3D",
@@ -34,6 +35,10 @@ export const skills = [
         name: "Python",
         image:
           "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/242px-Python-logo-notext.svg.png",
+      },
+      {
+        name: "Go",
+        image: "https://icon.icepanel.io/Technology/svg/Go.svg",
       },
     ],
   },
@@ -65,8 +70,7 @@ export const skills = [
       },
       {
         name: "TailwindCSS",
-        image:
-          "https://tailwindcss.com/_next/static/media/tailwindcss-mark.3c5441fc7a190fb1800d4a5c7f07ba4b1345a9c8.svg",
+        image: "https://icon.icepanel.io/Technology/svg/Tailwind-CSS.svg",
       },
     ],
   },
@@ -83,6 +87,10 @@ export const skills = [
         name: "Express.js",
         image:
           "https://cdn.prod.website-files.com/6320125ace536b6ad148eca3/66502d746f57d299fe0e0c31_Image%201-Express.js.webp",
+      },
+      {
+        name: "FastAPI",
+        image: "https://icon.icepanel.io/Technology/svg/FastAPI.svg",
       },
       {
         name: "GraphQL",
@@ -146,14 +154,26 @@ export const skills = [
 ];
 
 export const experiences = [
-   {
+  {
     id: 0,
     img: "https://media.licdn.com/dms/image/v2/C560BAQEAGDJH5GNZMg/company-logo_200_200/company-logo_200_200/0/1631325219065?e=1762992000&v=beta&t=lSVMQ1aooM9ad-ea_hmOA4-6XAGkqyXxsVuAn792C5U",
     role: "Full Stack Developer",
     company: "Aban Investment LLC",
     date: "June 2025 - Present",
     desc: "Developed 4 major enterprise-level applications enhancing automation, reporting, and system communication across departments. Built a FastAPI-based dashboard system with an authentication module to manage product pricing, purchases, and analytics—improving data accessibility and operational visibility. Created a smart barcode generation solution for Oracle ERP using Express.js, enabling invoice-based barcode generation. Once scanned, users could securely download bills directly to their devices—streamlining invoice validation and tracking. Engineered an automated mail service system using Node.js, Redis, Bull Queue, and Azure Blob Storage, which retrieves billing and user data nightly, uploads documents (up to 100MB each) to cloud storage, and sends consolidated email summaries to users every morning at 8 AM. Implemented retry and error-handling logic to ensure 99.9% delivery success rate. Led the development of an internal enterprise management hub integrating multiple applications—Adrenaline, Smart Recruiter, Adhoc Requests, Visa Management, and Asset Issuance—into a unified platform. Designed a microservices-based architecture using Nest.js and gRPC for inter-service communication. Implemented Kong API Gateway for secure routing, service discovery, and rate limiting. Developed core services including Auth Service, Manager Core, and SR Service, with a Next.js frontend for a seamless user experience. Delivered a scalable and maintainable system architecture that significantly reduced cross-departmental workflow time and improved approval tracking efficiency.",
-    skills: ["Nest.js", "PostgreSQL", "Socket.IO", "Bull Queue", "Docker", "MySQL", "gRPC", "Kong", "Redies", "Microservices", "FastAPI"],
+    skills: [
+      "Nest.js",
+      "PostgreSQL",
+      "Socket.IO",
+      "Bull Queue",
+      "Docker",
+      "MySQL",
+      "gRPC",
+      "Kong",
+      "Redies",
+      "Microservices",
+      "FastAPI",
+    ],
   },
   {
     id: 1,
@@ -189,7 +209,14 @@ export const experiences = [
     company: "Tapup",
     date: "November 2020 - February 2022",
     desc: "Developed an E-commerce platform and a social media application with features similar to Instagram and Clubhouse. Created cross-platform caregiving service applications using React Native and Node.js.",
-    skills: ["React Native", "Next.js", "Redux", "Context API", "Node.js", "Django"],
+    skills: [
+      "React Native",
+      "Next.js",
+      "Redux",
+      "Context API",
+      "Node.js",
+      "Django",
+    ],
   },
 ];
 
@@ -204,7 +231,7 @@ export const education = [
   },
   {
     id: 1,
-    // img: "https://vit.edu.in/images/logo_vit.png",
+    img: "https://www.vidyavision.com/CollegeUploads/Logos/2017-20-11-15-03-27_VIT.pnghttps://yt3.googleusercontent.com/CW3FBMkUn9q-c6hSSNPHmVAX3Tj9WxdBd7zhnUpXTrITJcMNW27HNDs_uSsY4WTl7J5K2cT7=s900-c-k-c0x00ffffff-no-rjhttps://pbs.twimg.com/profile_images/2164462295/TwitterProfile-VP_400x400.pnghttps://futurebridge.skilljourney.in/img/1060.png",
     school: "vidyalankar polytechnic",
     date: "Apr 2015 - Apr 2017",
     desc: "I completed my class 12 high school education at Methodist School, Dankuni, where I studied Science with Computer Science.",
