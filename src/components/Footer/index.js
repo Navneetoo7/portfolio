@@ -101,7 +101,7 @@ function Footer() {
           <SocialMediaIcon href={Bio.insta} target="display"><InstagramIcon /></SocialMediaIcon>
         </SocialMediaIcons>
         <Copyright>
-          &copy; 2023 Navneet Chaurasiya. All rights reserved.
+          &copy; 2026 Navneet Chaurasiya. All rights reserved.
         </Copyright>
 
       </FooterWrapper>
