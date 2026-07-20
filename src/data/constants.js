@@ -6,9 +6,11 @@ export const Bio = {
     "Mobile App Developer",
     "Programmer",
   ],
-  description: `I'm a Full Stack Developer with 5+ years of experience, specializing in backend engineering. I build scalable and secure systems using Node.js, NestJS, and FastAPI with expertise in Redis, RabbitMQ, Kafka, and PostgreSQL.
-
-I focus on designing clean, high-performance architectures and microservices that power automation, FinTech, and AI-driven platforms. Alongside backend development, I deliver end-to-end solutions with React.js, Next.js, and React Native, backed by strong DevOps and API integration skills.`,
+  description: `AI Backend-focused Full Stack Developer with 5+ years of experience designing and building scalable, secure,
+and high-performance applications. Experienced in Node.js, NestJS, FastAPI, microservices, cloud platforms,
+and AI-powered solutions. Strong expertise in distributed systems, messaging queues, relational and NoSQL
+databases, and modern frontend technologies. Passionate about solving complex engineering problems and
+delivering production-ready software`,
   github: "https://github.com/Navneetoo7",
   resume:
     "https://drive.google.com/file/d/1j4Gjxj1V4z0JrL0QAXy1OJQs3jb5yj1c/view?usp=drivesdk",
