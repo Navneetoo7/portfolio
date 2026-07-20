@@ -13,7 +13,7 @@ databases, and modern frontend technologies. Passionate about solving complex en
 delivering production-ready software`,
   github: "https://github.com/Navneetoo7",
   resume:
-    "https://drive.google.com/file/d/1j4Gjxj1V4z0JrL0QAXy1OJQs3jb5yj1c/view?usp=drivesdk",
+    "https://drive.google.com/file/d/1hmwqrXJxACjm9kL3VFqek_xNrdYKzVi9/view?usp=drivesdk",
   linkedin: "https://www.linkedin.com/in/navneetoo7/",
   insta:
     "https://instagram.com/nef__oo7?utm_source=qr&igshid=NGExMmI2YTkyZg%3D%3D",
