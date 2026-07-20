@@ -11,7 +11,7 @@ export const Bio = {
 I focus on designing clean, high-performance architectures and microservices that power automation, FinTech, and AI-driven platforms. Alongside backend development, I deliver end-to-end solutions with React.js, Next.js, and React Native, backed by strong DevOps and API integration skills.`,
   github: "https://github.com/Navneetoo7",
   resume:
-    "https://drive.google.com/file/d/1P25MfuoBUqYufzWR6UJb54GWpStmGkWI/view?usp=drivesdk",
+    "https://drive.google.com/file/d/1xZ1N7fsbgqlHN-uX-igPzaRct2FYI9wh/view?usp=drivesdk",
   linkedin: "https://www.linkedin.com/in/navneetoo7/",
   insta:
     "https://instagram.com/nef__oo7?utm_source=qr&igshid=NGExMmI2YTkyZg%3D%3D",
