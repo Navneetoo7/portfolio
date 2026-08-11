@@ -11,6 +11,7 @@ import {
   SubTitle,
   ResumeButton,
   HeroBg,
+  AmbientGlow,
 } from "./HeroStyle";
 // import HeroImg from "../../images/HeroImage.jpg";
 import ChangedOne from "../../images/profile_image.png";
@@ -22,6 +23,7 @@ const HeroSection = () => {
   return (
     <div id="about">
       <HeroContainer>
+        <AmbientGlow />
         <HeroBg>
           <HeroBgAnimation />
         </HeroBg>
@@ -31,13 +33,15 @@ const HeroSection = () => {
               Hi, I am <br /> {Bio.name}
             </Title>
             <TextLoop>
-              I am a
+              <span>I am a</span>
               <Span>
                 <Typewriter
                   options={{
                     strings: Bio.roles,
                     autoStart: true,
                     loop: true,
+                    delay: 60,
+                    deleteSpeed: 30,
                   }}
                 />
               </Span>

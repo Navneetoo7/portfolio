@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 
 const Document = styled.img`
@@ -34,7 +34,9 @@ const Span = styled.span`
 `;
 
 const Card = styled.div`
-  width: 650px;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
   border-radius: 10px;
   box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
   padding: 12px 16px;
@@ -45,6 +47,7 @@ const Card = styled.div`
   flex-direction: column;
   gap: 12px;
   transition: all 0.3s ease-in-out;
+  background: ${({ theme }) => theme.card};
   &:hover {
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
     transform: translateY(-5px);
@@ -52,7 +55,6 @@ const Card = styled.div`
   @media only screen and (max-width: 768px) {
     padding: 10px;
     gap: 8px;
-    width: 300px;
   }
 
   &:hover ${Document} {
@@ -74,11 +76,16 @@ const Top = styled.div`
 
 const Image = styled.img`
   height: 50px;
-  background-color: #000;
+  width: 50px;
+  object-fit: contain;
+  background-color: #fff;
   border-radius: 10px;
   margin-top: 4px;
+  padding: 4px;
+  flex-shrink: 0;
   @media only screen and (max-width: 768px) {
     height: 40px;
+    width: 40px;
   }
 `;
 
@@ -89,29 +96,32 @@ const Body = styled.div`
 `;
 
 const Name = styled.div`
-  font-size: 18px;
-  font-weight: 600;
-  color: ${({ theme }) => theme.text_primary + 99};
+  font-size: 20px;
+  font-weight: 700;
+  color: ${({ theme }) => theme.text_primary};
+  line-height: 1.3;
   @media only screen and (max-width: 768px) {
-    font-size: 14px;
+    font-size: 16px;
   }
 `;
 
 const Degree = styled.div`
-  font-size: 14px;
-  font-weight: 500;
-  color: ${({ theme }) => theme.text_secondary + 99};
+  font-size: 15px;
+  font-weight: 600;
+  color: ${({ theme }) => theme.primary};
+  margin-top: 2px;
   @media only screen and (max-width: 768px) {
-    font-size: 12px;
+    font-size: 13px;
   }
 `;
 
 const Date = styled.div`
-  font-size: 12px;
-  font-weight: 400;
-  color: ${({ theme }) => theme.text_secondary + 80};
+  font-size: 13px;
+  font-weight: 500;
+  color: ${({ theme }) => theme.text_secondary};
+  margin-top: 4px;
   @media only screen and (max-width: 768px) {
-    font-size: 10px;
+    font-size: 12px;
   }
 `;
 
@@ -125,19 +135,25 @@ const Date = styled.div`
 // `;
 
 const EducationCard = ({ education }) => {
+  const [imgSrc, setImgSrc] = useState(education.img);
+  const fallback = `https://ui-avatars.com/api/?name=${encodeURIComponent(
+    education.school || "School"
+  )}&background=854CE6&color=fff&size=128&bold=true`;
+
   return (
     <Card>
       <Top>
-        <Image src={education.img} />
+        <Image
+          src={imgSrc || fallback}
+          alt={education.school}
+          onError={() => setImgSrc(fallback)}
+        />
         <Body>
           <Name>{education.school}</Name>
           <Degree>{education.degree}</Degree>
           <Date>{education.date}</Date>
         </Body>
       </Top>
-      {/* <Description>
-                <Span>{education.desc}</Span>
-            </Description> */}
     </Card>
   );
 };

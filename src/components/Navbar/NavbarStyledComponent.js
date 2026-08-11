@@ -24,9 +24,7 @@ export const NavbarContainer = styled.div`
   width: 100%;
   padding: 0 24px;
   max-width: 1200px;
-  @media only screen and (max-width: 600px) {
-    background-color: #fffff7;
-  }
+  background-color: ${({ theme }) => theme.card_light};
 `;
 
 export const NavLogo = styled(LinkR)`
@@ -36,6 +34,7 @@ export const NavLogo = styled(LinkR)`
   justify-content: start;
   align-items: center;
   text-decoration: none;
+  color: ${({ theme }) => theme.text_primary};
   @media (max-width: 640px) {
     padding: 0 0px;
   }
@@ -44,6 +43,39 @@ export const Span = styled.div`
   padding: 0 4px;
   font-weight: bold;
   font-size: 18px;
+  color: ${({ theme }) => theme.text_primary};
+`;
+
+export const ThemeButton = styled.button`
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  height: 40px;
+  padding: 0 14px;
+  margin-right: 12px;
+  border-radius: 20px;
+  border: 1.8px solid ${({ theme }) => theme.primary};
+  background: ${({ theme }) =>
+    theme.bg === "#FFFFFF" ? "#111111" : "#FFFFFF"};
+  color: ${({ theme }) =>
+    theme.bg === "#FFFFFF" ? "#FFFFFF" : "#111111"};
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+  }
+
+  @media screen and (max-width: 768px) {
+    height: 34px;
+    padding: 0 10px;
+    margin-right: 0;
+    font-size: 12px;
+  }
 `;
 export const NavItems = styled.ul`
   width: 100%;
@@ -104,6 +136,7 @@ export const ButtonContainer = styled.div`
   justify-content: end;
   align-items: center;
   padding: 0 6px;
+  gap: 4px;
   @media screen and (max-width: 768px) {
     display: none;
   }
@@ -112,11 +145,12 @@ export const ButtonContainer = styled.div`
 export const MobileIcon = styled.div`
   display: none;
   @media screen and (max-width: 768px) {
-    display: block;
+    display: flex;
+    align-items: center;
     position: absolute;
     top: 0;
     right: 0;
-    transform: translate(-100%, 60%);
+    transform: translate(-20%, 55%);
     font-size: 1.5rem;
     cursor: pointer;
     color: ${({ theme }) => theme.text_primary};

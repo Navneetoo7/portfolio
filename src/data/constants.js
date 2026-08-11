@@ -1,16 +1,17 @@
+import ghobashLogo from "../images/companies/ghobash.png";
+import mindsquareLogo from "../images/companies/mindsquare.png";
+import tapupLogo from "../images/companies/tapup.png";
+
 export const Bio = {
   name: "Navneet Chaurasiya",
   roles: [
-    "Full Stack Developer",
+    "AI Full Stack Developer",
     "Backend Specialist",
-    "Mobile App Developer",
-    "Programmer",
+    "Frontend & Mobile Developer",
+    "System Architecture Design",
   ],
-  description: `AI Backend-focused Full Stack Developer with 5+ years of experience designing and building scalable, secure,
-and high-performance applications. Experienced in Node.js, NestJS, FastAPI, microservices, cloud platforms,
-and AI-powered solutions. Strong expertise in distributed systems, messaging queues, relational and NoSQL
-databases, and modern frontend technologies. Passionate about solving complex engineering problems and
-delivering production-ready software`,
+  description:
+    "AI Full Stack Developer with 5+ years of experience building end-to-end products across web and mobile. I design scalable backends with Node.js, NestJS, and FastAPI, and craft polished frontends with React, Next.js, Angular, and React Native. Specialized in backend engineering, microservices, cloud platforms, AI-powered features, and real-time systems — delivering secure, high-performance applications from idea to production.",
   github: "https://github.com/Navneetoo7",
   resume:
     "https://drive.google.com/file/d/1hmwqrXJxACjm9kL3VFqek_xNrdYKzVi9/view?usp=drivesdk",
@@ -26,21 +27,22 @@ export const skills = [
       {
         name: "JavaScript",
         image:
-          "https://www.javascripttutorial.net/wp-content/uploads/2021/04/JavaScript-Tutorial.svg",
+          "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
       },
       {
         name: "TypeScript",
         image:
-          "https://www.datocms-assets.com/48401/1627663113-learn-typescript.png?fit=max&fm=webp&w=900",
+          "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
       },
       {
         name: "Python",
         image:
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/242px-Python-logo-notext.svg.png",
+          "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
       },
       {
         name: "Go",
-        image: "https://icon.icepanel.io/Technology/svg/Go.svg",
+        image:
+          "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg",
       },
     ],
   },
@@ -50,25 +52,27 @@ export const skills = [
       {
         name: "React Native",
         image:
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/440px-React-icon.svg.png",
+          "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
       },
       {
         name: "React.js",
         image:
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/440px-React-icon.svg.png",
+          "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
       },
       {
         name: "Angular",
-        image: "https://angular.io/assets/images/logos/angular/angular.png",
+        image:
+          "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg",
       },
       {
         name: "Next.js",
-        image: "https://cdn.worldvectorlogo.com/logos/next-js.svg",
+        image:
+          "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
       },
       {
         name: "Redux",
         image:
-          "https://raw.githubusercontent.com/reduxjs/redux/master/logo/logo.png",
+          "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg",
       },
       {
         name: "TailwindCSS",
@@ -82,27 +86,36 @@ export const skills = [
       {
         name: "Node.js",
         image:
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1180px-Node.js_logo.svg.png",
+          "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
       },
-      { name: "Nest.js", image: "https://nestjs.com/img/logo-small.svg" },
+      {
+        name: "Nest.js",
+        image:
+          "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nestjs/nestjs-original.svg",
+      },
       {
         name: "Express.js",
         image:
-          "https://cdn.prod.website-files.com/6320125ace536b6ad148eca3/66502d746f57d299fe0e0c31_Image%201-Express.js.webp",
+          "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
       },
       {
         name: "FastAPI",
-        image: "https://icon.icepanel.io/Technology/svg/FastAPI.svg",
+        image:
+          "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg",
       },
       {
         name: "GraphQL",
-        image: "https://www.vectorlogo.zone/logos/graphql/graphql-icon.svg",
+        image:
+          "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg",
       },
-      { name: "Socket.IO", image: "https://socket.io/images/logo.svg" },
+      {
+        name: "Socket.IO",
+        image: "https://socket.io/images/logo.svg",
+      },
       {
         name: "RabbitMQ",
         image:
-          "https://dyltqmyl993wv.cloudfront.net/assets/stacks/rmq-messaging-topology-operator/img/rmq-messaging-topology-operator-stack-220x234.png",
+          "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rabbitmq/rabbitmq-original.svg",
       },
     ],
   },
@@ -112,22 +125,22 @@ export const skills = [
       {
         name: "PostgreSQL",
         image:
-          "https://upload.wikimedia.org/wikipedia/commons/2/29/Postgresql_elephant.svg",
+          "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
       },
       {
         name: "MySQL",
         image:
-          "https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg",
+          "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg",
       },
       {
         name: "MongoDB",
         image:
-          "https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg",
+          "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
       },
       {
         name: "Redis",
         image:
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Redis_logo.svg/400px-Redis_logo.svg.png",
+          "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg",
       },
     ],
   },
@@ -136,20 +149,28 @@ export const skills = [
     skills: [
       {
         name: "Git",
-        image: "https://git-scm.com/images/logos/downloads/Git-Logo-2Color.svg",
+        image:
+          "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
       },
       {
         name: "Docker",
         image:
-          "https://www.docker.com/wp-content/uploads/2022/03/Moby-logo.png",
+          "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg",
       },
       {
         name: "AWS",
-        image: "https://a0.awsstatic.com/main/images/logos/aws_logo.png",
+        image:
+          "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg",
+      },
+      {
+        name: "Azure",
+        image:
+          "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg",
       },
       {
         name: "Cloudflare",
-        image: "https://www.cloudflare.com/img/cf-facebook-card.png",
+        image:
+          "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cloudflare/cloudflare-original.svg",
       },
     ],
   },
@@ -158,59 +179,114 @@ export const skills = [
 export const experiences = [
   {
     id: 0,
-    img: "https://media.licdn.com/dms/image/v2/C560BAQEAGDJH5GNZMg/company-logo_200_200/company-logo_200_200/0/1631325219065?e=1762992000&v=beta&t=lSVMQ1aooM9ad-ea_hmOA4-6XAGkqyXxsVuAn792C5U",
+    img: ghobashLogo,
     role: "Full Stack Developer",
-    company: "Aban Investment LLC",
+    company: "Ghobash Group",
     date: "June 2025 - Present",
-    desc: "Developed 4 major enterprise-level applications enhancing automation, reporting, and system communication across departments. Built a FastAPI-based dashboard system with an authentication module to manage product pricing, purchases, and analytics—improving data accessibility and operational visibility. Created a smart barcode generation solution for Oracle ERP using Express.js, enabling invoice-based barcode generation. Once scanned, users could securely download bills directly to their devices—streamlining invoice validation and tracking. Engineered an automated mail service system using Node.js, Redis, Bull Queue, and Azure Blob Storage, which retrieves billing and user data nightly, uploads documents (up to 100MB each) to cloud storage, and sends consolidated email summaries to users every morning at 8 AM. Implemented retry and error-handling logic to ensure 99.9% delivery success rate. Led the development of an internal enterprise management hub integrating multiple applications—Adrenaline, Smart Recruiter, Adhoc Requests, Visa Management, and Asset Issuance—into a unified platform. Designed a microservices-based architecture using Nest.js and gRPC for inter-service communication. Implemented Kong API Gateway for secure routing, service discovery, and rate limiting. Developed core services including Auth Service, Manager Core, and SR Service, with a Next.js frontend for a seamless user experience. Delivered a scalable and maintainable system architecture that significantly reduced cross-departmental workflow time and improved approval tracking efficiency.",
+    desc: "Building enterprise-level applications for automation, reporting, and cross-department communication.",
+    points: [
+      "Developed 4 major enterprise applications that improved automation, reporting, and system communication across departments.",
+      "Built a FastAPI dashboard with authentication to manage product pricing, purchases, and analytics — improving data accessibility and operational visibility.",
+      "Created a smart barcode generation solution for Oracle ERP using Express.js, enabling invoice-based barcode generation and secure bill download after scan.",
+      "Engineered an automated mail service with Node.js, Redis, Bull Queue, and Azure Blob Storage that processes nightly billing data and delivers consolidated email summaries at 8 AM with 99.9% delivery success.",
+      "Led an internal enterprise management hub integrating Adrenaline, Smart Recruiter, Adhoc Requests, Visa Management, and Asset Issuance into one platform.",
+      "Designed Nest.js microservices with gRPC, Kong API Gateway, and a Next.js frontend — reducing cross-department workflow time by ~40%.",
+    ],
     skills: [
       "Nest.js",
+      "Next.js",
       "PostgreSQL",
+      "MySQL",
       "Socket.IO",
       "Bull Queue",
+      "Redis",
       "Docker",
-      "MySQL",
       "gRPC",
       "Kong",
-      "Redies",
-      "Microservices",
       "FastAPI",
+      "Microservices",
+      "Azure",
     ],
   },
   {
     id: 1,
-    img: "https://media.licdn.com/dms/image/v2/D4D0BAQGZW5wJindNgw/company-logo_200_200/company-logo_200_200/0/1696677600640/voizzitofficial_logo?e=1762992000&v=beta&t=IlHEH7bXyQemB9QTsvwWaa9XUmjC9eH-ys9tGeIasEE",
+    img: "https://www.google.com/s2/favicons?domain=voizzit.com&sz=128",
     role: "Full Stack Developer",
     company: "Voizzit Information Technology LLC",
     date: "February 2024 - June 2025",
-    desc: "Developed an OTT platform app content management system, collaborating with an 18-member international team. Architected and implemented backend services using Nest.js, PostgreSQL, and Bull Queue for efficient content delivery. Integrated payment gateway solutions and implemented real-time features using Socket.io.",
-    skills: ["Nest.js", "PostgreSQL", "Socket.IO", "Bull Queue", "Docker"],
+    desc: "Built scalable OTT and AI-powered EdTech products with an international engineering team.",
+    points: [
+      "Developed a scalable OTT platform content management system as part of an 18-member international team.",
+      "Architected backend services with Nest.js, PostgreSQL, and Bull Queue for efficient content delivery and background processing.",
+      "Integrated OCR (Tesseract.js) and text-to-speech (ElevenLabs) to power audiobook and content extraction features.",
+      "Built real-time features with Socket.IO and integrated payment gateway solutions for seamless transactions.",
+      "Designed and deployed microservices to improve scalability and performance across the platform.",
+      "Developed an AI-powered story creation feature for an EdTech product, enabling parents and children to collaboratively create books.",
+    ],
+    skills: [
+      "Nest.js",
+      "React.js",
+      "TypeScript",
+      "PostgreSQL",
+      "MySQL",
+      "Socket.IO",
+      "Bull Queue",
+      "Redis",
+      "RabbitMQ",
+      "Docker",
+      "Cloudflare",
+    ],
   },
   {
     id: 2,
-    img: "https://media.licdn.com/dms/image/v2/C510BAQE5jbbFEAeWFA/company-logo_200_200/company-logo_200_200/0/1631369215758?e=1762992000&v=beta&t=gwYLlztB7mz9-7tHd2jLh5RYzZYCTj9iwno54tn7fAs",
+    img: mindsquareLogo,
     role: "Full Stack Developer",
     company: "MindSquare | Reliance Industries Limited",
     date: "September 2023 - February 2024",
-    desc: "Developed a microservice subscription portal enabling various sectors to access services securely via tokens. Built a maintenance management application for oil and gas equipment with a multi-level approval system.",
+    desc: "Delivered oil & energy applications with secure access and multi-level approval workflows.",
+    points: [
+      "Developed a microservice subscription portal enabling sectors to securely access services via tokens.",
+      "Built a maintenance management application for oil and gas equipment with multi-level approval workflows.",
+      "Implemented danger-level calculation and approval tracking to improve operational safety and decision-making.",
+      "Delivered full-stack features using TypeScript, Angular, Node.js, and MySQL in a production enterprise environment.",
+    ],
     skills: ["TypeScript", "Angular", "Node.js", "MySQL"],
   },
   {
     id: 3,
-    img: "https://media.licdn.com/dms/image/v2/C560BAQHOBmJs5EihDA/company-logo_200_200/company-logo_200_200/0/1630644305985/oneture_logo?e=1762992000&v=beta&t=xNr5cMYtz45BFLYEMxB0C55UIdFw2cx2Re-Qja2cThA",
+    img: "https://www.google.com/s2/favicons?domain=oneture.com&sz=128",
     role: "Software Engineer",
     company: "Oneture Technologies",
     date: "February 2022 - March 2023",
-    desc: "Developed ATM operation management applications serving 60,000+ daily users. Built mobile and web applications using TypeScript, React Native, Angular, and Redux.",
-    skills: ["TypeScript", "React Native", "Angular", "Redux"],
+    desc: "Built banking/FinTech ATM operations platforms used by 60,000+ users daily.",
+    points: [
+      "Developed ATM operation management applications serving 60,000+ daily users across multiple banks including SBI and UCO.",
+      "Built mobile and web applications for ATM-related activities using TypeScript, React Native, Angular, and Redux.",
+      "Reduced service calls by ~40% by improving workflows and reliability for day-to-day ATM operations.",
+      "Led development of a security-focused Angular web application for ATM activities and Securam lock operations.",
+    ],
+    skills: [
+      "TypeScript",
+      "React Native",
+      "Angular",
+      "React.js",
+      "Redux",
+      "Node.js",
+    ],
   },
   {
     id: 4,
-    // img: "https://media.licdn.com/dms/image/C560BAQHOBmJs5EihDA/company-logo_200_200/...",
+    img: tapupLogo,
     role: "Full Stack Developer",
     company: "Tapup",
     date: "November 2020 - February 2022",
-    desc: "Developed an E-commerce platform and a social media application with features similar to Instagram and Clubhouse. Created cross-platform caregiving service applications using React Native and Node.js.",
+    desc: "Built e-commerce, social networking, and caregiving products across web and mobile.",
+    points: [
+      "Developed an e-commerce platform with product, cart, and order flows using modern full-stack technologies.",
+      "Built a social media application with features similar to Instagram and Clubhouse for networking and engagement.",
+      "Created cross-platform caregiving service applications using React Native and Node.js.",
+      "Worked across React Native, Next.js, Redux, Context API, Node.js, and Django to ship production features.",
+    ],
     skills: [
       "React Native",
       "Next.js",
@@ -226,17 +302,17 @@ export const education = [
   {
     id: 0,
     img: "https://image-static.collegedunia.com/public/college_data/images/logos/1709543727PHCETLogo21.png?h=71.17&w=71.17&mode=stretch",
-    school: "Mumbai University: MES Pillai HOC College of Engineering",
+    school: "Mumbai University — MES Pillai HOC College of Engineering",
     date: "2017 - 2020",
-    desc: "B.E. in Computer Engineering",
-    degree: "Bachelor of Engineering",
+    desc: "Completed Bachelor of Engineering in Computer Engineering with a focus on software development and systems design.",
+    degree: "B.E. in Computer Engineering",
   },
   {
     id: 1,
-    img: "https://www.vidyavision.com/CollegeUploads/Logos/2017-20-11-15-03-27_VIT.pnghttps://yt3.googleusercontent.com/CW3FBMkUn9q-c6hSSNPHmVAX3Tj9WxdBd7zhnUpXTrITJcMNW27HNDs_uSsY4WTl7J5K2cT7=s900-c-k-c0x00ffffff-no-rjhttps://pbs.twimg.com/profile_images/2164462295/TwitterProfile-VP_400x400.pnghttps://futurebridge.skilljourney.in/img/1060.png",
-    school: "vidyalankar polytechnic",
+    img: "https://www.vidyavision.com/CollegeUploads/Logos/2017-20-11-15-03-27_VIT.png",
+    school: "Vidyalankar Polytechnic",
     date: "Apr 2015 - Apr 2017",
-    desc: "I completed my class 12 high school education at Methodist School, Dankuni, where I studied Science with Computer Science.",
-    degree: "Diplom, Computer Engineering",
+    desc: "Completed Diploma in Computer Engineering, building a strong foundation in programming and computer systems.",
+    degree: "Diploma in Computer Engineering",
   },
 ];
