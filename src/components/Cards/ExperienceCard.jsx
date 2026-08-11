@@ -15,6 +15,8 @@ const Document = styled.img`
 
 const Description = styled.div`
   width: 100%;
+  display: flex;
+  flex-direction: column;
   font-size: 15px;
   font-weight: 400;
   color: ${({ theme }) => theme.text_primary + 99};
@@ -185,8 +187,11 @@ const Toggle = styled.button`
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  align-self: center;
   margin-top: 10px;
   margin-bottom: 2px;
+  margin-left: auto;
+  margin-right: auto;
   padding: 8px 16px;
   border-radius: 8px;
   border: 1px solid

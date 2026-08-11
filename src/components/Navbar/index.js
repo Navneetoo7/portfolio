@@ -38,7 +38,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
               textDecoration: "none",
             }}
           >
-            <DiCssdeck size="3rem" /> <Span>Navneet</Span>
+            <DiCssdeck size="1.75rem" /> <Span>Navneet</Span>
           </a>
         </NavLogo>
         <MobileIcon>

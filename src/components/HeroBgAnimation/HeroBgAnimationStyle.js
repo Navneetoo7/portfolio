@@ -23,8 +23,8 @@ const slowRotate = keyframes`
 
 export const Div = styled.div`
   position: relative;
-  width: 600px;
-  height: 500px;
+  width: 100%;
+  height: 100%;
   animation: ${slowFloat} 14s ease-in-out infinite;
 
   .BgAnimation__svg {
@@ -32,15 +32,5 @@ export const Div = styled.div`
     height: 100%;
     animation: ${slowRotate} 48s linear infinite;
     opacity: ${({ theme }) => (theme.bg === "#FFFFFF" ? 0.55 : 0.9)};
-  }
-
-  @media (max-width: 960px) {
-    width: 420px;
-    height: 360px;
-  }
-
-  @media (max-width: 640px) {
-    width: 300px;
-    height: 260px;
   }
 `;

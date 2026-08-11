@@ -22,15 +22,22 @@ export const HeroContainer = styled.div`
   background: ${({ theme }) => theme.card_light};
   display: flex;
   justify-content: center;
+  align-items: center;
   position: relative;
   padding: 80px 30px;
   overflow: hidden;
   box-sizing: border-box;
+  min-height: calc(100vh - 56px);
+  min-height: calc(100dvh - 56px);
   @media (max-width: 960px) {
-    padding: 66px 20px;
+    padding: 40px 20px 32px;
+  }
+  @media (max-width: 768px) {
+    min-height: auto;
+    padding: 20px 16px 28px;
   }
   @media (max-width: 640px) {
-    padding: 32px 16px;
+    padding: 16px 16px 24px;
   }
   z-index: 1;
 
@@ -88,25 +95,27 @@ export const AmbientGlow = styled.div`
 
 export const HeroBg = styled.div`
   position: absolute;
-  display: flex;
-  justify-content: end;
   top: 50%;
   left: 50%;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  max-width: 1360px;
-  overflow: hidden;
-  padding: 0 30px;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
+  width: 420px;
+  height: 420px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
   z-index: 0;
   pointer-events: none;
+  overflow: visible;
 
   @media (max-width: 960px) {
-    justify-content: center;
-    padding: 0;
+    width: 360px;
+    height: 360px;
+  }
+
+  @media (max-width: 640px) {
+    width: 280px;
+    height: 280px;
   }
 `;
 
@@ -163,7 +172,7 @@ export const HeroLeftContainer = styled.div`
   @media (max-width: 960px) {
     order: 2;
     max-width: 100%;
-    margin-bottom: 30px;
+    margin-bottom: 12px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -171,7 +180,7 @@ export const HeroLeftContainer = styled.div`
 
   @media (max-width: 640px) {
     order: 2;
-    margin-bottom: 30px;
+    margin-bottom: 8px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -179,11 +188,13 @@ export const HeroLeftContainer = styled.div`
 `;
 
 export const HeroRightContainer = styled.div`
+  position: relative;
   width: 100%;
   max-width: 420px;
   display: flex;
   order: 2;
-  justify-content: end;
+  justify-content: center;
+  align-items: center;
   gap: 12px;
   animation: ${fadeInScale} 0.9s ease both;
   animation-delay: 0.25s;
@@ -192,11 +203,11 @@ export const HeroRightContainer = styled.div`
     max-width: 100%;
     justify-content: center;
     align-items: center;
-    margin-bottom: 48px;
+    margin-bottom: 16px;
   }
 
   @media (max-width: 640px) {
-    margin-bottom: 30px;
+    margin-bottom: 12px;
     flex-direction: column;
     align-items: center;
   }
@@ -204,6 +215,7 @@ export const HeroRightContainer = styled.div`
 
 export const Img = styled.img`
   position: relative;
+  z-index: 1;
   width: 100%;
   max-width: 320px;
   height: auto;
@@ -222,11 +234,11 @@ export const Img = styled.img`
   }
 
   @media (max-width: 960px) {
-    max-width: 280px;
+    max-width: 220px;
   }
 
   @media (max-width: 640px) {
-    max-width: 220px;
+    max-width: 170px;
   }
 `;
 
@@ -238,11 +250,13 @@ export const Title = styled.div`
   animation: ${fadeUp} 0.7s ease both;
   @media (max-width: 960px) {
     text-align: center;
+    font-size: 42px;
+    line-height: 52px;
   }
 
   @media (max-width: 640px) {
-    font-size: 40px;
-    line-height: 48px;
+    font-size: 32px;
+    line-height: 40px;
     margin-bottom: 8px;
   }
 `;
@@ -302,11 +316,13 @@ export const SubTitle = styled.div`
 
   @media (max-width: 960px) {
     text-align: center;
+    margin-bottom: 24px;
   }
 
   @media (max-width: 640px) {
     font-size: 16px;
-    line-height: 28px;
+    line-height: 24px;
+    margin-bottom: 20px;
     padding: 0 8px;
   }
 `;

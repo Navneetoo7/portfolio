@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 export const Nav = styled.div`
   background-color: ${({ theme }) => theme.card_light};
-  height: 80px;
+  height: 56px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -14,15 +14,18 @@ export const Nav = styled.div`
   @media (max-width: 960px) {
     trastion: 0.8s all ease;
   }
+  @media (max-width: 768px) {
+    height: 48px;
+  }
 `;
 export const NavbarContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 60px;
+  height: 100%;
   z-index: 1;
   width: 100%;
-  padding: 0 24px;
+  padding: 0 16px;
   max-width: 1200px;
   background-color: ${({ theme }) => theme.card_light};
 `;
@@ -38,12 +41,28 @@ export const NavLogo = styled(LinkR)`
   @media (max-width: 640px) {
     padding: 0 0px;
   }
+
+  svg {
+    width: 1.75rem;
+    height: 1.75rem;
+  }
+
+  @media (max-width: 768px) {
+    svg {
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+  }
 `;
 export const Span = styled.div`
   padding: 0 4px;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 16px;
   color: ${({ theme }) => theme.text_primary};
+
+  @media (max-width: 768px) {
+    font-size: 14px;
+  }
 `;
 
 export const ThemeButton = styled.button`
@@ -71,8 +90,8 @@ export const ThemeButton = styled.button`
   }
 
   @media screen and (max-width: 768px) {
-    height: 34px;
-    padding: 0 10px;
+    height: 30px;
+    padding: 0 8px;
     margin-right: 0;
     font-size: 12px;
   }
@@ -147,11 +166,12 @@ export const MobileIcon = styled.div`
   @media screen and (max-width: 768px) {
     display: flex;
     align-items: center;
+    height: 100%;
     position: absolute;
     top: 0;
     right: 0;
-    transform: translate(-20%, 55%);
-    font-size: 1.5rem;
+    transform: translateX(-16px);
+    font-size: 1.25rem;
     cursor: pointer;
     color: ${({ theme }) => theme.text_primary};
   }
@@ -163,7 +183,7 @@ export const MobileMenu = styled.div`
   justify-content: center;
   gap: 16px;
   position: absolute;
-  top: 80px;
+  top: 56px;
   right: 0;
   width: 100%;
   padding: 12px 40px 24px 40px;
@@ -175,6 +195,10 @@ export const MobileMenu = styled.div`
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
   opacity: ${({ isOpen }) => (isOpen ? "100%" : "0")};
   z-index: ${({ isOpen }) => (isOpen ? "1000" : "-1000")};
+
+  @media screen and (max-width: 768px) {
+    top: 48px;
+  }
 `;
 
 export const MobileMenuItems = styled.ul`

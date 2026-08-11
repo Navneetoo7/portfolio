@@ -24,9 +24,6 @@ const HeroSection = () => {
     <div id="about">
       <HeroContainer>
         <AmbientGlow />
-        <HeroBg>
-          <HeroBgAnimation />
-        </HeroBg>
         <HeroInnerContainer>
           <HeroLeftContainer id="Left">
             <Title>
@@ -56,6 +53,9 @@ const HeroSection = () => {
           </HeroLeftContainer>
 
           <HeroRightContainer id="Right">
+            <HeroBg>
+              <HeroBgAnimation />
+            </HeroBg>
             <Img
               src={ChangedOne}
               alt="hero-image"

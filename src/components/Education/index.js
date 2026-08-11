@@ -22,12 +22,12 @@ const Wrapper = styled.div`
   flex-direction: column;
   width: 100%;
   max-width: 900px;
-  padding: 40px 20px 0;
+  padding: 24px 20px 0;
   gap: 12px;
   box-sizing: border-box;
 
   @media (max-width: 768px) {
-    padding: 32px 14px 0;
+    padding: 16px 14px 0;
   }
 `;
 
@@ -102,7 +102,7 @@ const Item = styled.div`
   &::before {
     content: "";
     position: absolute;
-    left: -21px;
+    left: -26px;
     top: 28px;
     width: 12px;
     height: 12px;
@@ -112,7 +112,7 @@ const Item = styled.div`
     z-index: 1;
 
     @media (max-width: 768px) {
-      left: -17px;
+      left: -20px;
       top: 24px;
       width: 10px;
       height: 10px;

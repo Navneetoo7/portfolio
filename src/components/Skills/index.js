@@ -11,7 +11,7 @@ const Container = styled.div`
   z-index: 1;
   align-items: center;
   width: 100%;
-  padding: 20px 0 40px;
+  padding: 16px 0 24px;
   box-sizing: border-box;
 `;
 

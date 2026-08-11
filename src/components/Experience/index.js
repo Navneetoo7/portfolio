@@ -11,9 +11,9 @@ const Container = styled.div`
   position: relative;
   z-index: 1;
   align-items: center;
-  padding: 40px 0 64px;
+  padding: 24px 0 40px;
   @media (max-width: 960px) {
-    padding: 20px 0 48px;
+    padding: 12px 0 32px;
   }
 `;
 
@@ -25,13 +25,13 @@ const Wrapper = styled.div`
   flex-direction: column;
   width: 100%;
   max-width: 900px;
-  padding: 60px 20px 32px;
+  padding: 24px 20px 24px;
   gap: 12px;
   box-sizing: border-box;
   z-index: 1;
 
   @media (max-width: 768px) {
-    padding: 40px 14px 28px;
+    padding: 16px 14px 20px;
   }
 `;
 
@@ -106,7 +106,7 @@ const Item = styled.div`
   &::before {
     content: "";
     position: absolute;
-    left: -21px;
+    left: -26px;
     top: 28px;
     width: 12px;
     height: 12px;
@@ -116,7 +116,7 @@ const Item = styled.div`
     z-index: 1;
 
     @media (max-width: 768px) {
-      left: -17px;
+      left: -20px;
       top: 24px;
       width: 10px;
       height: 10px;
