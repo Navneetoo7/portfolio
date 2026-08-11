@@ -14,7 +14,7 @@ export const Bio = {
     "AI Full Stack Developer with 5+ years of experience building end-to-end products across web and mobile. I design scalable backends with Node.js, NestJS, and FastAPI, and craft polished frontends with React, Next.js, Angular, and React Native. Specialized in backend engineering, microservices, cloud platforms, AI-powered features, and real-time systems — delivering secure, high-performance applications from idea to production.",
   github: "https://github.com/Navneetoo7",
   resume:
-    "https://drive.google.com/file/d/1hmwqrXJxACjm9kL3VFqek_xNrdYKzVi9/view?usp=drivesdk",
+    "https://drive.google.com/file/d/1xDN6UHhZmlTkfG5kbq-B1IgAZ-z0Xo9e/view?usp=drivesdk",
   linkedin: "https://www.linkedin.com/in/navneetoo7/",
   insta:
     "https://instagram.com/nef__oo7?utm_source=qr&igshid=NGExMmI2YTkyZg%3D%3D",
