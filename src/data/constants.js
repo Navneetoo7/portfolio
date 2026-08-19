@@ -14,7 +14,7 @@ export const Bio = {
   email: "navneetjustin@gmail.com",
   github: "https://github.com/Navneetoo7",
   resume:
-    "https://drive.google.com/file/d/1klyqWpROXLxFg3ssQcr9soOladGHpAO5/view?usp=drivesdk",
+    "https://drive.google.com/file/d/1omoLaZ-QXv45d4ozbTo3l07oQcs99zDX/view?usp=drivesdk",
   linkedin: "https://www.linkedin.com/in/navneetoo7/",
   insta:
     "https://instagram.com/nef__oo7?utm_source=qr&igshid=NGExMmI2YTkyZg%3D%3D",
