@@ -33,11 +33,15 @@ export const HeroContainer = styled.div`
     padding: 40px 20px 32px;
   }
   @media (max-width: 768px) {
-    min-height: auto;
-    padding: 20px 16px 28px;
+    min-height: calc(100vh - 56px);
+    min-height: calc(100dvh - 56px);
+    padding: 16px 16px 24px;
   }
   @media (max-width: 640px) {
-    padding: 16px 16px 24px;
+    min-height: calc(100vh - 56px);
+    min-height: calc(100dvh - 56px);
+    padding: 20px 16px 24px;
+    justify-content: center;
   }
   z-index: 1;
 
@@ -132,6 +136,9 @@ export const HeroInnerContainer = styled.div`
     flex-direction: column;
     gap: 20px;
   }
+  @media (max-width: 640px) {
+    gap: 8px;
+  }
 `;
 
 const fadeUp = keyframes`
@@ -207,7 +214,7 @@ export const HeroRightContainer = styled.div`
   }
 
   @media (max-width: 640px) {
-    margin-bottom: 12px;
+    margin-bottom: 4px;
     flex-direction: column;
     align-items: center;
   }
@@ -238,7 +245,7 @@ export const Img = styled.img`
   }
 
   @media (max-width: 640px) {
-    max-width: 170px;
+    max-width: 160px;
   }
 `;
 
@@ -255,9 +262,9 @@ export const Title = styled.div`
   }
 
   @media (max-width: 640px) {
-    font-size: 32px;
-    line-height: 40px;
-    margin-bottom: 8px;
+    font-size: 28px;
+    line-height: 34px;
+    margin-bottom: 4px;
   }
 `;
 
@@ -283,10 +290,10 @@ export const TextLoop = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 6px;
-    font-size: 22px;
-    line-height: 1.35;
-    margin-bottom: 16px;
+    gap: 4px;
+    font-size: 18px;
+    line-height: 1.3;
+    margin: 4px 0 8px;
   }
 `;
 
@@ -301,7 +308,7 @@ export const Span = styled.span`
   @media (max-width: 640px) {
     text-align: center;
     max-width: 100%;
-    font-size: 24px;
+    font-size: 20px;
   }
 `;
 
@@ -320,10 +327,10 @@ export const SubTitle = styled.div`
   }
 
   @media (max-width: 640px) {
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 14px;
+    line-height: 22px;
     margin-bottom: 20px;
-    padding: 0 8px;
+    padding: 0 12px;
   }
 `;
 
@@ -359,7 +366,8 @@ export const ResumeButton = styled.a`
   }
 
   @media (max-width: 640px) {
-    padding: 10px 0;
-    font-size: 18px;
+    padding: 14px 0;
+    font-size: 17px;
+    max-width: 260px;
   }
 `;
