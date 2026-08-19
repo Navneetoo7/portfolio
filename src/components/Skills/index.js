@@ -52,7 +52,9 @@ export const Desc = styled.div`
   font-size: 18px;
   text-align: center;
   max-width: 640px;
+  margin: 0 auto;
   padding: 0 8px;
+  line-height: 1.5;
   color: ${({ theme }) => theme.text_secondary};
   @media (max-width: 768px) {
     font-size: 16px;

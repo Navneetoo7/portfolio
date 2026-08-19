@@ -60,9 +60,10 @@ const Navbar = ({ darkMode, setDarkMode }) => {
         <NavItems>
           <NavLink href="#about">About</NavLink>
           <NavLink href="#skills">Skills</NavLink>
+          <NavLink href="#projects">Projects</NavLink>
           <NavLink href="#experience">Experience</NavLink>
-          {/* <NavLink href='#projects'>Projects</NavLink> */}
           <NavLink href="#education">Education</NavLink>
+          <NavLink href="#contact">Contact</NavLink>
         </NavItems>
         <ButtonContainer>
           <ThemeButton
@@ -97,6 +98,14 @@ const Navbar = ({ darkMode, setDarkMode }) => {
               Skills
             </MobileLink>
             <MobileLink
+              href="#projects"
+              onClick={() => {
+                setIsOpen(!isOpen);
+              }}
+            >
+              Projects
+            </MobileLink>
+            <MobileLink
               href="#experience"
               onClick={() => {
                 setIsOpen(!isOpen);
@@ -104,9 +113,6 @@ const Navbar = ({ darkMode, setDarkMode }) => {
             >
               Experience
             </MobileLink>
-            {/* <MobileLink href='#projects' onClick={() => {
-              setIsOpen(!isOpen)
-            }}>Projects</MobileLink> */}
             <MobileLink
               href="#education"
               onClick={() => {
@@ -114,6 +120,14 @@ const Navbar = ({ darkMode, setDarkMode }) => {
               }}
             >
               Education
+            </MobileLink>
+            <MobileLink
+              href="#contact"
+              onClick={() => {
+                setIsOpen(!isOpen);
+              }}
+            >
+              Contact
             </MobileLink>
             <ThemeButton
               type="button"

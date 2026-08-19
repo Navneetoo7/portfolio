@@ -1,8 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import { useRef } from "react";
-import emailjs from "@emailjs/browser";
-import { Snackbar } from "@mui/material";
+import { Bio } from "../../data/constants";
+import ScrollReveal from "../ScrollReveal";
 
 const Container = styled.div`
   display: flex;
@@ -11,193 +10,137 @@ const Container = styled.div`
   position: relative;
   z-index: 1;
   align-items: center;
+  width: 100%;
+  padding: 24px 0 48px;
+  box-sizing: border-box;
+
   @media (max-width: 960px) {
-    padding: 0px;
+    padding: 12px 0 40px;
   }
 `;
 
 const Wrapper = styled.div`
   position: relative;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
   width: 100%;
-  max-width: 1350px;
-  padding: 0px 0px 80px 0px;
-  gap: 12px;
-  @media (max-width: 960px) {
-    flex-direction: column;
+  max-width: 720px;
+  gap: 16px;
+  padding: 0 24px;
+  box-sizing: border-box;
+  text-align: center;
+
+  @media (max-width: 768px) {
+    padding: 0 16px;
   }
 `;
 
 const Title = styled.div`
   font-size: 42px;
-  text-align: center;
   font-weight: 600;
-  margin-top: 20px;
   color: ${({ theme }) => theme.text_primary};
+  line-height: 1.25;
+
   @media (max-width: 768px) {
-    margin-top: 12px;
-    font-size: 32px;
+    font-size: 28px;
   }
 `;
 
 const Desc = styled.div`
   font-size: 18px;
-  text-align: center;
   max-width: 600px;
   color: ${({ theme }) => theme.text_secondary};
+  line-height: 1.55;
+
   @media (max-width: 768px) {
-    margin-top: 12px;
     font-size: 16px;
   }
 `;
 
-const ContactForm = styled.form`
-  width: 95%;
-  max-width: 600px;
+const Links = styled.div`
   display: flex;
   flex-direction: column;
-  background-color: ${({ theme }) => theme.card};
-  padding: 32px;
-  border-radius: 16px;
-  box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
-  margin-top: 28px;
   gap: 12px;
-`;
-
-const ContactTitle = styled.div`
-  font-size: 24px;
-  margin-bottom: 6px;
-  font-weight: 600;
-  color: ${({ theme }) => theme.text_primary};
-`;
-
-const ContactInput = styled.input`
-  flex: 1;
-  background-color: transparent;
-  border: 1px solid ${({ theme }) => theme.text_secondary};
-  outline: none;
-  font-size: 18px;
-  color: ${({ theme }) => theme.text_primary};
-  border-radius: 12px;
-  padding: 12px 16px;
-  &:focus {
-    border: 1px solid ${({ theme }) => theme.primary};
-  }
-`;
-
-const ContactInputMessage = styled.textarea`
-  flex: 1;
-  background-color: transparent;
-  border: 1px solid ${({ theme }) => theme.text_secondary};
-  outline: none;
-  font-size: 18px;
-  color: ${({ theme }) => theme.text_primary};
-  border-radius: 12px;
-  padding: 12px 16px;
-  &:focus {
-    border: 1px solid ${({ theme }) => theme.primary};
-  }
-`;
-
-const ContactButton = styled.input`
+  margin-top: 12px;
   width: 100%;
+  max-width: 420px;
+`;
+
+const LinkRow = styled.a`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  flex-wrap: wrap;
   text-decoration: none;
-  text-align: center;
-  background: hsla(271, 100%, 50%, 1);
-  background: linear-gradient(
-    225deg,
-    hsla(271, 100%, 50%, 1) 0%,
-    hsla(294, 100%, 50%, 1) 100%
-  );
-  background: -moz-linear-gradient(
-    225deg,
-    hsla(271, 100%, 50%, 1) 0%,
-    hsla(294, 100%, 50%, 1) 100%
-  );
-  background: -webkit-linear-gradient(
-    225deg,
-    hsla(271, 100%, 50%, 1) 0%,
-    hsla(294, 100%, 50%, 1) 100%
-  );
-  padding: 13px 16px;
-  margin-top: 2px;
-  border-radius: 12px;
-  border: none;
   color: ${({ theme }) => theme.text_primary};
-  font-size: 18px;
+  font-size: 16px;
+  padding: 12px 16px;
+  border-radius: 12px;
+  border: 1px solid
+    ${({ theme }) =>
+      theme.bg === "#FFFFFF"
+        ? "rgba(133, 76, 230, 0.25)"
+        : "rgba(133, 76, 230, 0.45)"};
+  background: ${({ theme }) => theme.card};
+  transition: transform 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+    border-color: ${({ theme }) => theme.primary};
+    color: ${({ theme }) => theme.primary};
+  }
+
+  @media (max-width: 768px) {
+    font-size: 14px;
+    padding: 10px 14px;
+  }
+`;
+
+const Label = styled.span`
   font-weight: 600;
+  color: ${({ theme }) => theme.text_secondary};
+`;
+
+const Value = styled.span`
+  font-weight: 500;
 `;
 
 const Contact = () => {
-  //hooks
-  const [open, setOpen] = React.useState(false);
-  const form = useRef();
-
-  const handleSubmit = (e) => {
-    console.log(form.current, "====", form);
-    e.preventDefault();
-    emailjs
-      .sendForm(
-        "service_bsvpsi8",
-        "template_nv7k7mj",
-        form.current,
-        "371te-rhhiFWxlVHq"
-      )
-      .then(
-        (result) => {
-          setOpen(true);
-          form.current.reset();
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
-  };
-
   return (
-    <Container>
+    <Container id="contact">
       <Wrapper>
-        <Title>Contact</Title>
-        <Desc>
-          Feel free to reach out to me for any questions or opportunities!
-        </Desc>
-        <ContactForm
-          ref={form}
-          onSubmit={handleSubmit}
-        >
-          <ContactTitle>Email Me 🚀</ContactTitle>
-          <ContactInput
-            placeholder="Your Email "
-            name="from_email"
-          />
-          <ContactInput
-            placeholder="Your Name"
-            name="from_name"
-          />
-          <ContactInput
-            placeholder="Subject"
-            name="subject"
-          />
-          <ContactInputMessage
-            placeholder="Message"
-            rows="4"
-            name="message"
-          />
-          <ContactButton
-            type="submit"
-            value="Send"
-          />
-        </ContactForm>
-        <Snackbar
-          open={open}
-          autoHideDuration={6000}
-          onClose={() => setOpen(false)}
-          message="Email sent successfully!"
-          severity="success"
-        />
+        <ScrollReveal>
+          <Title>Let's Build Something Together</Title>
+          <Desc>
+            Open to Backend Tech Lead / Senior Backend Engineer / AI Backend
+            Engineer roles — onsite or remote.
+          </Desc>
+        </ScrollReveal>
+        <Links>
+          <LinkRow href={`mailto:${Bio.email}`}>
+            <Label>Email:</Label>
+            <Value>{Bio.email}</Value>
+          </LinkRow>
+          <LinkRow
+            href={Bio.linkedin}
+            target="_blank"
+            rel="noreferrer"
+          >
+            <Label>LinkedIn:</Label>
+            <Value>linkedin.com/in/navneetoo7</Value>
+          </LinkRow>
+          <LinkRow
+            href={Bio.github}
+            target="_blank"
+            rel="noreferrer"
+          >
+            <Label>GitHub:</Label>
+            <Value>github.com/Navneetoo7</Value>
+          </LinkRow>
+        </Links>
       </Wrapper>
     </Container>
   );

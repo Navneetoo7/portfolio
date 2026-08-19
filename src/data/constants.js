@@ -5,13 +5,13 @@ import tapupLogo from "../images/companies/tapup.png";
 export const Bio = {
   name: "Navneet Chaurasiya",
   roles: [
-    "AI Full Stack Developer",
-    "Backend Specialist",
-    "Frontend & Mobile Developer",
-    "System Architecture Design",
+    "Full Stack Developer",
+    "Backend Architect",
+    "AI Systems Engineer",
   ],
   description:
-    "AI Full Stack Developer with 5+ years of experience building end-to-end products across web and mobile. I design scalable backends with Node.js, NestJS, and FastAPI, and craft polished frontends with React, Next.js, Angular, and React Native. Specialized in backend engineering, microservices, cloud platforms, AI-powered features, and real-time systems — delivering secure, high-performance applications from idea to production.",
+    "AI Full Stack Developer with 5+ years building end-to-end products across web and mobile. I build GenAI-powered features with LangChain and OpenAI, design scalable backends with Node.js, NestJS, and FastAPI, and craft polished frontends with React, Next.js, Angular, and React Native — delivering secure, high-performance applications from idea to production.",
+  email: "navneetjustin@gmail.com",
   github: "https://github.com/Navneetoo7",
   resume:
     "https://drive.google.com/file/d/1klyqWpROXLxFg3ssQcr9soOladGHpAO5/view?usp=drivesdk",
@@ -295,6 +295,44 @@ export const experiences = [
       "Node.js",
       "Django",
     ],
+  },
+];
+
+export const projects = [
+  {
+    id: 0,
+    title: "Enterprise Automation Hub",
+    description:
+      "Unified platform integrating HR, recruitment, finance, and operations across four enterprise applications, cutting cross-department workflow time by 40%.",
+    tags: ["NestJS", "gRPC", "Kong API Gateway", "Next.js", "PostgreSQL"],
+  },
+  {
+    id: 1,
+    title: "AI-Powered Story Creation Platform",
+    description:
+      "Collaborative storytelling feature for an EdTech platform, letting parents and children co-create books.",
+    tags: ["NestJS", "PostgreSQL", "LangChain", "OpenAI (GPT)", "React.js"],
+  },
+  {
+    id: 2,
+    title: "OTT Content Management System",
+    description:
+      "Scalable content delivery platform with OCR text extraction and AI text-to-speech for an audiobook feature.",
+    tags: ["NestJS", "PostgreSQL", "Bull Queue", "Tesseract.js", "ElevenLabs"],
+  },
+  {
+    id: 3,
+    title: "Automated Enterprise Email Service",
+    description:
+      "Fault-tolerant email delivery system handling 300+ emails/day, achieving 99.9% delivery success.",
+    tags: ["Node.js", "Redis", "Bull Queue", "Azure Blob Storage"],
+  },
+  {
+    id: 4,
+    title: "ATM Operations Platform",
+    description:
+      "Mobile and web platform for bank staff managing ATM operations, serving 60,000+ daily users; reduced support calls by 40%.",
+    tags: ["TypeScript", "React Native", "Angular", "Redux", "Node.js"],
   },
 ];
 
